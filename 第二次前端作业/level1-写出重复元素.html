@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function recur(arr) {
+            var newArr = [];
+            arr.sort();
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] == arr[i + 1] && (newArr.indexOf(arr[i]) == -1)) {
+                    newArr.push(arr[i]);
+                    i++;
+
+                }
+            }
+
+            return newArr;
+        }
+        var arr = ['A', 'B', 'C', 'D', 'E', 'E', 'F', 'G', 'H', 'J', 'K', 'K', 'M'];
+        console.log(recur(arr));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

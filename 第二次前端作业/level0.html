@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = 'today is a happy day';  //输入想转化的字符串
+        function change(s) {
+            var i, ss = s.toLowerCase().split(" ");  //指定表示每个拆分应发生的点的字符串
+            for (i = 0; i < ss.length; i++) {
+                ss[i] = ss[i].slice(0, 1).toUpperCase() + ss[i].slice(1);  //每次输出一个首字母大写的单词
+            }
+            return ss.join(' ');  //指定分隔每个元素的字符串
+        }
+        console.log(change(a));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
